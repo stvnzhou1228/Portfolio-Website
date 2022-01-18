@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Line Sculpture</title> <!-- tab title -->
+    <link rel="stylesheet" href="styles.css"> <!-- opens styles.css file -->
+</head>
+<body> <!-- body text -->
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side"> <!-- creates a grouping on the left -->
+                <div class="brand"> <!-- text -->
+                    <div>steven zhou</div> <!-- create a name -->
+                </div>
+            </div>
+            <div class="right-side"> <!-- creates a grouping on the right -->
+                <div class="nav-link-wrapper"> <!-- link -->
+                    <a href="index.html">Home</a> <!-- link to index/home page -->
+                </div>
+                <div class="nav-link-wrapper"> <!-- link -->
+                    <a href="portfolio.html">Portfolio</a> <!-- link to portfolio page -->
+                </div>
+                <div class="nav-link-wrapper"> <!-- link -->
+                    <a href="about.html">About</a> <!-- link to about page -->
+                </div>
+                <div class="nav-link-wrapper"> <!-- link -->
+                    <a href="contact.html">Contact</a> <!-- link to contact page -->
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="line"></div>
+            <div class="titles">
+                line sculpture - group effort
+            </div>
+            <div class="date">
+                2/2/2020  |  Steven Zhou 
+            </div>
+            <div class="post">
+                <div class="blog-post-paragraphs">
+                    <p>Line Sculptures challenge us to create a 3-D sculptural line drawing using wire or wire-like materials. The prompt pushes us to create a well-rendered sculpture out of a mundane, thin medium, breaking the material’s limitations. Furthermore, we were to incorporate a white clothes hanger into the piece, either using it as is, or manipulating its shape to merge into the sculpture, acting as a unifying factor between the works of each artist. Aside from these guidelines, the rest of the project was up to our personal interpretation, giving us the creative liberty to curate a sophisticated sculpture through problem-solving.</p>
+                    <div class="side-by-side">
+                        <div class="left-text"></div><p>During my research process, I really enjoyed the idea of depicting humanoid figures. Though as with any figure drawing, accuracy plays a major role in its success. Thus, as a way to eliminate the risk of creating an unsuccessful attempt at realism, I decided to depict simplified forms of anatomy. Furthermore, I find the most impressive pieces to be the detail-oriented ones. Ones that encourages the viewers to look closer, inspecting it intimately until they discover its hidden nuances. As a result, I chose to portray a plethora of red and black humanoid figures hanging off of each other from the hanger. Moreover, the individual figures all repeated a constant, heart-shaped, motif within their mouth, hands, and feet, adding an additional visual element to the piece. Giving the concept a physical form, I made a prototype of my sculpture and presented it to my fellow classmates. Finally, upon receiving various suggestions, I finalized my idea.</p>
+                        <div class="space-between"></div>
+                        <div class="lineSculptureImages">
+                            <div class="lineSculptureImage">
+                                <div class="protoype">
+                                    <img src="100things/prototype.jpg"/>
+                                </div>
+                            </div>
+                            <p>prototype</p>
+                        </div>
+                    </div>
+                    <p>To create your own figure, you can follow these steps, twisting the wire after forming each body feature to keep it in place.</p>
+                    <div class="panels">
+                        <div class="panel"><img src="100things/p1.jpg"/></div>
+                        <div class="panel"><img src="100things/p2.jpg"/></div>
+                        <div class="panel"><img src="100things/p3.jpg"/></div>
+                        <div class="panel"><img src="100things/p4.jpg"/></div>
+                        <div class="panel"><img src="100things/p5.jpg"/></div>
+                        <div class="panel"><img src="100things/p6.jpg"/></div>
+                        <div class="panel"><img src="100things/p7.jpg"/></div>
+                        <div class="panel"><img src="100things/p8.jpg"/></div>
+                    </div>
+                    <p>One by one, I sculpted figures of different sizes, each with its own characteristic, from rounder heads to longer bodies. Eventually, I was able to connect them all into one sculpture, displaying the group effort of nearly 100 small, red and black humanoid figures, clinging onto life, and  attempting to avoid the dangerous territories of the ground. Working together, they tactically spread themselves out to support and grab each other by their head, hands, and feet, with no man left behind. Additionally, the piece encapsulates “organized-chaos”. While the sculpture may initially look like a wall of mess, as the viewer walks closer to inspect the wall of wire, individual figures begin to emerge, revealing that the sculpture is composed entirely of separate entities. Likewise, I chose two colours, red and black, to aid the viewers in distinguishing the individual figures, contrasting each other amongst an eight foot downpour of wire.</p>
+                    <p>However, throughout the work process, the sheer size of the sculpture presented itself as a challenge. As I had to use a thin and malleable wire to create the intricate details of the piece, there was a constant struggle in keeping the wire from warping, especially due to the sculpture’s heavy weight. Thus, I was challenged to find a fine balance between the dimensions, and weight of the sculpture. While I wanted to create an extremely long piece, the sculpture would be too heavy, forcing me to make the sculpture wider to create a stronger foundation. Yet in doing that, the sculpture would become entirely too heavy, stretching the upper figures and ridding it of its figurative features. </p>
+                    <p>Although this project was a test of my patience, it lead me to develop a deeper understanding of the material. I’ve become much more comfortable with wire, and I’ve developed many new techniques and approaches to the material. Since my sculpture was based on repetition, I could see a significant improvement from my earliest creations. In the comparison photo, the left figure was my first attempt, while the right figure was the 100th figure in my sculpture. There are many noticeable changes between the two figures, with the first being very unorganized and “crude”, to the last one becoming much more sophisticated, and only taking half the time to make.</p>
+                    <p>In conclusion, I found this project to be very enjoyable, providing a whole new perspective to line art. It can come in many forms, contradicting my former, traditional perception of linear art. It allowed me to depict a 2-dimensional sketchbook drawing in a 3-D space, surpassing my own expectations. Likewise, it was an interesting challenge to integrate a clothes hanger into the piece, and seeing everyone’s use of the clothes hanger demonstrated the endless possibilities of creativity. Upon finishing this project, I wish to tackle even larger, 3-dimensional sculptures in the future, incorporating the skills I’ve acquired through this experience to produce more impressive pieces.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:70px"></div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.lineSculptureImage')
+    portfolioItems.forEach(portfolioItem => { 
+        portfolioItem.addEventListener('mouseover', () => { 
+            console.log(portfolioItem.childNodes[1].classList); 
+            portfolioItem.childNodes[1].classList.add('img-darken'); 
+        })
+    }) 
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
